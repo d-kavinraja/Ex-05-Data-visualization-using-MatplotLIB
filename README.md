@@ -145,5 +145,24 @@ plt.show()
 ```
 ![output](./output/o11.png)
 ![output](./output/o12.png)
+### Box PLot
+```py
+import matplotlib.pyplot as plt
+import numpy as np
+np.random.seed(10)
+data1 = np.random.normal(100, 20, 200)
+data2 = np.random.normal(80, 30, 200)
+data3 = np.random.normal(90, 25, 200)
+data = [data1, data2, data3]
+plt.figure(figsize=(8, 6))
+plt.boxplot(data)
+plt.xticks([1, 2, 3], ['Data 1', 'Data 2', 'Data 3'])
+plt.ylabel('Values')
+plt.title('Boxplot Example')
+plt.grid(True)
+plt.show()
+```
+![output](./output/o13.png)
+![output](./output/o14.png)
 # Result:
 Thus, all the data visualization techniques of matplotlib has been implemented.
